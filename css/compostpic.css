@@ -4,9 +4,14 @@
  * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-the-big-picture/blob/master/LICENSE)
  */
 body {
-  background: url('https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/new-york-city-rebirth-leonardo-ruggieri.jpg') no-repeat center center fixed;
+  background: url('https://www.brotes.com.ar/wp-content/uploads/2018/10/Composting-NYC.jpg') no-repeat center center fixed;
+  /* opacity: .5; */
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
 }
+
+/* body {
+  opacity: .5;
+} */

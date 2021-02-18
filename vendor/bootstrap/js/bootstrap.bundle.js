@@ -23,6 +23,8 @@
     }
   }
 
+  var mymap = L.map('mapid').setView([51.505, -0.09], 13);
+
   function _createClass(Constructor, protoProps, staticProps) {
     if (protoProps) _defineProperties(Constructor.prototype, protoProps);
     if (staticProps) _defineProperties(Constructor, staticProps);
