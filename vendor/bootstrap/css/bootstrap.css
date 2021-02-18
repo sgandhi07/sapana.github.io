@@ -58,10 +58,22 @@ body {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #212529;
+  color: white;
   text-align: left;
   background-color: #fff;
 }
+
+.mt-5, .glow {
+  color: white;
+  text-shadow:
+  0 0 12px brown,
+  0 0 15px brown,
+  0 0 20px brown,
+  0 0 50px black,
+  0 0 100px black;
+}
+
+#mapid { height: 180px; }
 
 [tabindex="-1"]:focus:not(:focus-visible) {
   outline: 0 !important;
