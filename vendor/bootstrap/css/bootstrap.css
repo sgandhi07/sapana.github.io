@@ -66,8 +66,8 @@ body {
 .mt-5, .glow {
   color: white;
   text-shadow:
-  0 0 12px brown,
-  0 0 15px brown,
+  0 0 12px darkgreen,
+  0 0 15px darkgreen,
   0 0 20px brown,
   0 0 50px black,
   0 0 100px black;
