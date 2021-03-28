@@ -7,6 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
 
   <title> |\| Y C ()RG/\|\|ICS |\/|G|\/|T</title>
 
@@ -88,6 +90,19 @@
 var map = L.map('mymap' /* The id of the DOM element that will contain the map */);
 
 map.setView([40.703312, -73.97968], 10);
+map.locate({setView: true, maxZoom: 10});
+
+function onLocationFound(e) {
+    var radius = e.accuracy;
+
+    L.marker(e.latlng).addTo(map)
+        .bindPopup("You are within " + radius + " meters from this point").openPopup();
+
+    L.circle(e.latlng, radius).addTo(map);
+}
+
+map.on('locationfound', onLocationFound);
+
 
 var baseLayer = L.tileLayer('https://maps{s}.nyc.gov/tms/1.0.0/carto/basemap/{z}/{x}/{y}.jpg', {
   minNativeZoom: 8,
@@ -393,7 +408,38 @@ var geojsonFeature = [ {
 }
 ];
 
-L.geoJSON(geojsonFeature).addTo(map);
+
+
+var geojsonMarkerOptions = {
+    radius: 3,
+    fillColor: "green",
+    color: "white",
+    weight: 1,
+    opacity: .7,
+    fillOpacity: 0.5
+};
+
+
+// L.geoJSON(geojsonFeature, {
+//     style: function(test) {
+//         switch (feature.properties.operation_) {
+//             case 'Wednesday': return {color: "#ff0000"};
+//             case 'Sunday':   return {color: "#0000ff"};
+//         }
+//     }
+// }).addTo(map);
+
+L.geoJSON(geojsonFeature, {
+    pointToLayer: function (feature, latlng) {
+        return L.circleMarker(latlng, geojsonMarkerOptions);
+    }
+}).addTo(map);
+
+
+
+
+
+
 
 
 </script>
