@@ -10,7 +10,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
 
-  <title> |\| Y C ()RG/\|\|ICS |\/|G|\/|T</title>
+  <title> |\| Y C [()mp()st</title>
 
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
 
@@ -420,21 +420,14 @@ var geojsonMarkerOptions = {
 };
 
 
-// L.geoJSON(geojsonFeature, {
-//     style: function(test) {
-//         switch (feature.properties.operation_) {
-//             case 'Wednesday': return {color: "#ff0000"};
-//             case 'Sunday':   return {color: "#0000ff"};
-//         }
-//     }
-// }).addTo(map);
-
 L.geoJSON(geojsonFeature, {
     pointToLayer: function (feature, latlng) {
         return L.circleMarker(latlng, geojsonMarkerOptions);
+    },
+    onEachFeature: function (feature, layer) {
+      layer.bindPopup('<b>'+feature.properties.food_scrap+'</b>'+'<br>'+feature.properties.open_month+", "+feature.properties.hours_to+" - "+feature.properties.hours_from+'<br>'+'<b>'+"Address: "+'</b>'+feature.properties.location+'<br>'+'<b>'+"Website: "+'</b>'+feature.properties.website);
     }
 }).addTo(map);
-
 
 
 
