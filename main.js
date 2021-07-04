@@ -38,10 +38,10 @@ function horticulture() {
         document.getElementById("HLintro").style.display = "none";
   document.getElementById("containerOneImg").style.display = "block";
   document.getElementById("containerOneImg").src = "img/hort1.png";
-  document.getElementById("figcaption1").innerHTML = "Above: Basemap delineating horticultural zones for gardeners.";
+  document.getElementById("figcaption1").innerHTML = "Above: Reference map for horticultural zones, describing the zone by the garden names that horticulturalists use.";
   document.getElementById("containerTwoImg").style.display = "block";
   document.getElementById("containerTwoImg").src = "img/hort2.png";
-  document.getElementById("figcaption2").innerHTML = "Above: Zooming in, this map highlights the plant beds that make up each horticultural zone. Contact me for PDF of all zones.";
+  document.getElementById("figcaption2").innerHTML = "Above: This is  first of sevemteen maps in an atlas series. Each one breaks down which plantbeds make up the garden/ecological zone.";
   document.getElementById("containerThreeImg").style.display = "block";
   document.getElementById("containerThreeImg").src = "img/hort3.png";
   document.getElementById("figcaption3").innerHTML = "Above: A snapshot of the most prevalent species on the High Line. The clustering of certain species hints towards the zones' ecosystem.";
