@@ -41,13 +41,13 @@ function horticulture() {
   document.getElementById("figcaption1").innerHTML = "Above: Reference map for horticultural zones, describing the zone by the garden names that horticulturalists use.";
   document.getElementById("containerTwoImg").style.display = "block";
   document.getElementById("containerTwoImg").src = "img/hort2.png";
-  document.getElementById("figcaption2").innerHTML = "Above: This is  first of sevemteen maps in an atlas series. Each one breaks down which plantbeds make up the garden/ecological zone.";
+  document.getElementById("figcaption2").innerHTML = "Above: This is  first of seventeen maps in an atlas series. Each one breaks down which plantbeds make up the garden/ecological zone.";
   document.getElementById("containerThreeImg").style.display = "block";
   document.getElementById("containerThreeImg").src = "img/hort3.png";
-  document.getElementById("figcaption3").innerHTML = "Above: A snapshot of the most prevalent species on the High Line. The clustering of certain species hints towards the zones' ecosystem.";
+  document.getElementById("figcaption3").innerHTML = "Above: My predecessor had mapped all the woody plants on High Line, and I wanted to do something with these extraordinary data points. I collaborated with the arborist and experimented with the data to create this map. This map shows the most popular trees on the High Line (<30 plantings), and we noticed how the groupings hinted at the gardens' ecological make-up.";
   document.getElementById("containerFourImg").style.display = "block";
   document.getElementById("containerFourImg").src = "img/hort4.png";
-  document.getElementById("figcaption4").innerHTML = "Above: One way to ascertain shade, light, potential wind conditions, and microclimates on the Park.";
+  document.getElementById("figcaption4").innerHTML = "Above: Micro-climates are starkly felt on the High Line, and a major factor affecting them is the height of buildings. I created this map to support the horticultarists anecdata about why they thought certain species thrived/didn't thrive in their garden, while they behaved in a different manner in another location. <br><br>One of my favorite parts of working at Friends of the High Line, was listening to the horticulturalists' analysis of how and why their plantings are behaving the way they are. I created various such visuzliations based on their insights.";
   document.getElementById("motitle").innerHTML = "Horticulture";
 }
 
