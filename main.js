@@ -1,7 +1,8 @@
 
 document.getElementById("design").addEventListener("click", design);
 function design() {
-    document.getElementById("HLintro").style.display = "none";
+  document.getElementById("HLintro").style.display = "none";
+  document.getElementById("otherintro").style.display = "none";
   document.getElementById("containerOneImg").style.display = "block";
   document.getElementById("containerOneImg").src = "img/CAD.png";
   document.getElementById("figcaption1").innerHTML = "Above: The location of assets such as benches and plantbeds were initially only available on CAD files. However, to make this information accessible to the field staff and the organization as a whole, my predecessor and I used tools to extrapolate geographic coordinates from the CAD files. We integrated these coordinates into our asset management software and internal database, where we could use them to make customized reference maps.";
@@ -18,7 +19,8 @@ function design() {
 
 document.getElementById("facilities").addEventListener("click", facilities);
 function facilities() {
-        document.getElementById("HLintro").style.display = "none";
+  document.getElementById("HLintro").style.display = "none";
+  document.getElementById("otherintro").style.display = "none";
   document.getElementById("containerOneImg").style.display = "block";
   document.getElementById("containerOneImg").src = "img/facilities1.png";
   document.getElementById("figcaption1").innerHTML = "Above: A map differentiating the maintenance zones. I made these reference maps for each department of the Operations Division (facilities, horticulture, custodial, and visitor services) and they were used to onboard new members onto the team.";
@@ -35,7 +37,8 @@ function facilities() {
 
 document.getElementById("horticulture").addEventListener("click", horticulture);
 function horticulture() {
-        document.getElementById("HLintro").style.display = "none";
+  document.getElementById("HLintro").style.display = "none";
+  document.getElementById("otherintro").style.display = "none";
   document.getElementById("containerOneImg").style.display = "block";
   document.getElementById("containerOneImg").src = "img/hort1.png";
   document.getElementById("figcaption1").innerHTML = "Above: Reference map for horticultural zones, describing the zone by the garden names that horticulturalists use.";
@@ -53,7 +56,9 @@ function horticulture() {
 
 document.getElementById("other").addEventListener("click", other);
 function other() {
-        document.getElementById("HLintro").style.display = "none";
+  document.getElementById("HLintro").style.display = "none";
+  document.getElementById("otherintro").style.display = "block";
+  document.getElementById("otherintro").innerHTML = "Above: Reference map for horticultural zones, describing the zone by the garden names that horticulturalists use.";
   document.getElementById("containerOneImg").style.display = "block";
   document.getElementById("containerOneImg").src = "img/other4.png";
   document.getElementById("figcaption1").innerHTML = "";
