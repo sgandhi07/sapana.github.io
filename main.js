@@ -58,7 +58,7 @@ document.getElementById("other").addEventListener("click", other);
 function other() {
   document.getElementById("HLintro").style.display = "none";
   document.getElementById("otherintro").style.display = "block";
-  document.getElementById("otherintro").innerHTML = "Above: Reference map for horticultural zones, describing the zone by the garden names that horticulturalists use.";
+  document.getElementById("otherintro").innerHTML = "Below are reference maps to various assets throughout the park. They highlight the use of the style guide I established, and my ability to visually convey many layers of information.";
   document.getElementById("containerOneImg").style.display = "block";
   document.getElementById("containerOneImg").src = "img/other4.png";
   document.getElementById("figcaption1").innerHTML = "";
