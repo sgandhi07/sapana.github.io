@@ -4,7 +4,7 @@
  * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-the-big-picture/blob/master/LICENSE)
  */
 body {
-  background-image: url('/img/fractcalMycelium.jpeg') no-repeat center center fixed;
+  background: url('https://mir-s3-cdn-cf.behance.net/project_modules/1400/05c1ad102532457.600e8e495c45c.jpeg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
